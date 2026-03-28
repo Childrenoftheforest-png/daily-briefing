@@ -305,8 +305,8 @@ Prioritise items from the last 2 weeks. Return ONLY the JSON array.`;
           'anthropic-dangerous-direct-browser-access': 'true'
         },
         body: JSON.stringify({
-          model: 'claude-sonnet-4-20250514',
-          max_tokens: 4000,
+          model: 'claude-sonnet-4-6',
+          max_tokens: 8000,
           tools: [{ type: 'web_search_20250305', name: 'web_search' }],
           system: SYSTEM_PROMPT,
           messages: [{ role: 'user', content: 'Search for today\'s most relevant and recent stories. Return only the JSON array.' }]
